@@ -15,7 +15,7 @@ Base sólida em:
 * **O aprendizado foi dividido em módulos abrangentes, permitindo uma transição sólida do desenvolvimento básico para o avançado:**
 
      * Fundamentos de Java e Desenvolvimento
-     * Introdução e configuração de ambiente (JDK, IDE, Versionamento).
+     * Configuração de ambiente (JDK, IDE, Versionamento).
      * Lógica de programação, tipos, variáveis e operadores.
      * Estruturas de controle e Coleções (Collections).
      * Orientação a Objetos: Interfaces, Herança, Composição e Agregação.
@@ -27,7 +27,7 @@ Base sólida em:
      * Modelagem de entidades e persistência avançada.
      * Arquitetura e Microsserviços
      * Gerenciamento de dependências e construção de aplicações web.
-     * Introdução ao Spring Boot.
+     * Spring Boot.
      * Desenvolvimento de Microsserviços.
      * Princípios de Design de Microsserviços (Os 12 fatores).
      * Conteinerização, Builds e Deployments.
@@ -35,8 +35,6 @@ Base sólida em:
      * Desenho de sistemas (System Design).
      * Algoritmos avançados e resolução de problemas.
      * Boas práticas de código (Clean Code).
-     * Carreira
-     * Preparação para entrevistas técnicas em Big Techs.
 
 ## 🚀 Projetos Práticos
 * **Ao longo do curso, foram desenvolvidos diversos projetos práticos ("Mãos na Massa"):**
@@ -49,12 +47,12 @@ Base sólida em:
 
 ## 📁 Estrutura do Repositório
    `Algoritmos e Estrutura de Dados/`: Implementações de algoritmos de ordenação, busca e estruturas de dados.
-   `Algoritmos_Avancados_Parte1/`: Resolução de problemas complexos de programação.
-
+   `Algoritmos_Avancados_Parte1/`: Programação Dinâmica e Recursão
+   `Algoritmos_Avancados_Parte2/`: Backtracking and Greedy
 ---
 
 Este repositório serve como evidência do meu percurso de aprendizado e aprimoramento técnico como desenvolvedor Especialista Back-End Java.
 
-Desenvolvido por: Gabriel Flores Guimarães
+## 📝 Desenvolvido por Gabriel Flores Guimarães
 
-Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
+## 🧠 Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
