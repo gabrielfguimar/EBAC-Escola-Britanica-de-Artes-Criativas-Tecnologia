@@ -1,0 +1,5 @@
+# Ignora arquivos compilados e pastas do sistema
+*.class
+bin/
+.vscode/
+.DS_Store
