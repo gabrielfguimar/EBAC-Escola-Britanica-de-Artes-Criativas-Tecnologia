@@ -48,11 +48,13 @@ Base sólida em:
 ## 📁 Estrutura do Repositório
    `Algoritmos e Estrutura de Dados/`: Implementações de algoritmos de ordenação, busca e estruturas de dados.
    `Algoritmos_Avancados_Parte1/`: Programação Dinâmica e Recursão
+   
    `Algoritmos_Avancados_Parte2/`: Backtracking and Greedy
+   
 ---
 
-Este repositório serve como evidência do meu percurso de aprendizado e aprimoramento técnico como desenvolvedor Especialista Back-End Java.
+💡Este repositório serve como evidência do meu percurso de aprendizado e aprimoramento técnico como desenvolvedor Especialista Back-End Java.
 
-## 📝 Desenvolvido por Gabriel Flores Guimarães
+📝 Desenvolvido por Gabriel Flores Guimarães
 
-## 🧠 Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
+🧠 Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
