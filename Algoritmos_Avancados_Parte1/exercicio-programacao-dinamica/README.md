@@ -18,7 +18,7 @@ Recursão Simples: $O(2^n)$  📉 Baixa (Exponencial)
 
 Programação Dinâmica: $O(n)$    📈 Alta (Linear)
 
-## 📊 💡 Por que a Programação Dinâmica é melhor?
+## 💡 Por que a Programação Dinâmica é melhor?
 A recursão ingênua sofre de explosão combinatória, recalculando os mesmos subproblemas repetidamente.
 
 A Programação Dinâmica resolve esse gargalo através da "memória":
