@@ -55,6 +55,6 @@ Base sólida em:
 
 💡Este repositório serve como evidência do meu percurso de aprendizado e aprimoramento técnico como desenvolvedor Especialista Back-End Java.
 
-📝 Desenvolvido por Gabriel Flores Guimarães
+## 📝 Desenvolvido por Gabriel Flores Guimarães
 
-🧠 Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
+## 🧠 Instituição: EBAC - Escola Britânica de Artes Criativas & Tecnologia
