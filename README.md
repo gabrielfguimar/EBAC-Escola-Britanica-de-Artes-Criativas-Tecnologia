@@ -46,10 +46,18 @@ Base sólida em:
 `Serviços`: Construção e desmembramento de microsserviços.
 
 ## 📁 Estrutura do Repositório
+
    `Algoritmos e Estrutura de Dados/`: Implementações de algoritmos de ordenação, busca e estruturas de dados.
-   `Algoritmos_Avancados_Parte1/`: Programação Dinâmica e Recursão
    
-   `Algoritmos_Avancados_Parte2/`: Backtracking and Greedy
+   `Algoritmos_Avancados_Parte1/`: Programação Dinâmica e Recursão.
+   
+   `Algoritmos_Avancados_Parte2/`: Backtracking and Greedy.
+   
+   `Clean-Code/`: Princípios e Aplicação de Código Limpo.
+   
+   `Testes_Unitarios_Parte1/`: Testes desenvolvidos utilizando o framework JUnit.
+   
+   `Testes_Unitarios_Parte2/`: Tratamento de exceções e automação de testes em Java.
    
 ---
 
