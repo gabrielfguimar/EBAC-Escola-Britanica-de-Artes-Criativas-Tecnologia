@@ -1,4 +1,7 @@
 # EBAC - Especialista Back-End Java
+
+[![Java Backend CI/CD](https://github.com/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/actions/workflows/main.yml/badge.svg)](https://github.com/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/actions/workflows/main.yml)
+
 Este repositório contém os códigos, exercícios e projetos desenvolvidos durante o curso de Especialista Back-End Java da EBAC (Escola Britânica de Artes Criativas & Tecnologia).
 
 ## 🎯 Objetivo
