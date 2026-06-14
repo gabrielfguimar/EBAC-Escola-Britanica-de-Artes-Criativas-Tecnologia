@@ -1,5 +1,6 @@
 # 🚀 EBAC - Especialista Back-End Java
 
+[![codecov](https://codecov.io/gh/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/graph/badge.svg?token=SEU_TOKEN_AQUI)](https://codecov.io/gh/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia)
 [![Java Backend CI/CD](https://github.com/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/actions/workflows/main.yml/badge.svg)](https://github.com/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/actions/workflows/main.yml)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white)
