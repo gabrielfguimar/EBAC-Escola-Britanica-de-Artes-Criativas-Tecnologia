@@ -23,6 +23,31 @@ Para demonstrar maturidade no ciclo de desenvolvimento, este repositório conta 
 2. **Containerização (Multi-stage):** Geração de uma imagem Docker otimizada, isolando o ambiente de build do ambiente de execução.
 3. **Deploy:** Envio automático da imagem para o Docker Hub, pronta para provisionamento em ambientes isolados e remotos.
 
+### 🧠 Decisões Arquiteturais e Engenharia de DevOps
+
+A construção da esteira de CI/CD e a conteinerização desta aplicação foram projetadas com foco em **qualidade, segurança e escalabilidade**. Abaixo, detalho os fundamentos técnicos das ferramentas e padrões escolhidos:
+
+#### 1. Docker com Multi-Stage Build
+
+Em vez de utilizar um processo tradicional de criação de imagem, a aplicação foi empacotada utilizando a técnica de *Multi-Stage Build* no `Dockerfile`. Essa decisão traz dois benefícios essenciais para aplicações Java:
+
+* **Tamanho e Performance:** O primeiro estágio (Build) utiliza uma imagem robusta com o Maven e a JDK completa para baixar dependências e compilar o código. O segundo estágio (Run) copia apenas o artefato gerado (`.jar`) para uma imagem JRE extremamente enxuta (como Alpine). O resultado é um contêiner final muito menor, que inicia mais rápido e otimiza custos de armazenamento em nuvem.
+* **Segurança Aprimorada:** Ao separar a compilação da execução, a imagem final enviada para o Docker Hub não contém o código-fonte original, nem ferramentas de compilação. Isso reduz drasticamente a superfície de vulnerabilidades.
+
+#### 2. Isolamento por Contêiner e Imutabilidade
+
+A utilização de contêineres Docker elimina definitivamente a clássica falha de consistência conhecida como *"na minha máquina funciona"*.
+
+* O empacotamento une a aplicação Spring Boot, suas dependências e a versão exata do sistema operacional necessário para rodá-la.
+* Isso garante **imutabilidade**: o exato mesmo artefato que é validado pela esteira do GitHub Actions é o que será executado em Produção, garantindo um comportamento previsível e facilitando o deploy em ecossistemas modernos (como Kubernetes ou AWS ECS).
+
+#### 3. Continuous Integration e Quality Gates
+
+O pipeline configurado no GitHub Actions atua como um "Portão de Qualidade" (*Quality Gate*) rígido e automatizado:
+
+* **Feedback Rápido e Prevenção de Regressão:** A cada novo *push*, a aplicação é construída e todos os testes são executados em um ambiente isolado. Se uma nova funcionalidade quebrar uma regra de negócio existente, o pipeline falha e bloqueia a integração do erro.
+* **Métricas de Confiabilidade (JaCoCo + Codecov):** A análise de cobertura de código assegura que a evolução da arquitetura não sacrifique a sua estabilidade. Manter esses dados visíveis exige disciplina e a aplicação constante de princípios de *Clean Code* e design testável.
+
 ## 🛠️ Conteúdo da Formação
 O aprendizado foi estruturado para garantir uma transição sólida da lógica estrutural para sistemas distribuídos:
 * **Fundamentos:** Configuração de ambiente, Estruturas de Controle, Collections, Orientação a Objetos (Herança, Interfaces).
