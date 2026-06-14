@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
+build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +21,16 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Executar Testes com Maven
+      - name: Executar Testes com Maven (e JaCoCo)
         run: mvn clean test
+
+      # --- NOVA ETAPA ADICIONADA AQUI ---
+      - name: Enviar Relatório de Cobertura para o Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./target/site/jacoco/jacoco.xml
+          fail_ci_if_error: false
 
   build-and-push-docker:
     needs: build-and-test
