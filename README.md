@@ -1,3 +1,5 @@
+[![Voltar ao Perfil](https://img.shields.io/badge/-🔙_Ver_Perfil_Principal-blue?style=for-the-badge)](https://github.com/gabrielfguimar)
+
 # 🚀 EBAC - Especialista Back-End Java
 
 [![codecov](https://codecov.io/github/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia/graph/badge.svg?token=33QPDM7I1H)](https://codecov.io/github/gabrielfguimar/EBAC-Escola-Britanica-de-Artes-Criativas-Tecnologia)
@@ -76,3 +78,7 @@ O aprendizado foi estruturado para garantir uma transição sólida da lógica e
 💡 *Este repositório serve como evidência do meu aprimoramento técnico contínuo para atuar no desenvolvimento de soluções backend escaláveis.*
 
 **📝Desenvolvido por Gabriel Flores Guimarães** 🔗 [LinkedIn: https://www.linkedin.com/in/gabrielfloresguimaraes/ | 🧠 EBAC - Escola Britânica de Artes Criativas & Tecnologia
+
+---
+### 🔙 Voltar ao perfil principal
+Clique [aqui](https://github.com/gabrielfguimar) para ver meu portfólio completo, projetos e jornada técnica.
