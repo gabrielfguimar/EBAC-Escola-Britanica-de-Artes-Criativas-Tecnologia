@@ -1,0 +1,37 @@
+name: Java CI with Maven
+
+# A esteira é disparada automaticamente a cada push ou pull request na branch main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Passo 1: Baixa o código do repositório para a máquina virtual do GitHub
+    - name: Checkout source code
+      uses: actions/checkout@v4
+
+    # Passo 2: Configura o ambiente Java (JDK 17) de forma declarativa (Fator II)
+    - name: Set up JDK 17
+      uses: actions/actions-java-v3@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    # Passo 3: Compila o código e roda testes isolados (Fator V - Build)
+    - name: Build with Maven
+      run: mvn -B clean package
+
+    # Passo 4: Opcional - Configura o Docker Buildx para validar o empacotamento da imagem
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    # Passo 5: Teste de fumaça do Build da Imagem Docker (Garante que o Dockerfile está correto)
+    - name: Test Docker Build
+      run: docker build . --file Dockerfile
